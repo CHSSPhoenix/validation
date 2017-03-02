@@ -4,7 +4,7 @@
 Use the file Practicum1.hs linked from the wiki. All of the functions are "undefined" to start with,
  allowing you to load the file into GHCi even though you haven't completed all the exercises.
 
-### Validating Credit Card Numbers
+**Validating Credit Card Numbers**
 
 Have you ever wondered how websites validate your credit card number when you shop online? 
 They don't check a massive database of numbers, and they don't use magic. 
@@ -88,15 +88,15 @@ then the result of the last step is 2 , proving that the number is invalid.
 
     Explain: Why do we use Integer here instead of Int or even Integral a ⇒ a?
 
-**Reading and Showing Credit Card Numbers**
+    **Reading and Showing Credit Card Numbers**
 
-It's fine to use an Integer for a credit card number internally, but we (as consumers)
-are accustomed to seeing the number with a certain formatting. In the following exercises, 
-we want to translate between the integer value 4012888888881881 and the string and the string
-"4012 8888 8888 1881", so that we have a space after every fourth digit from the
-right. We'll assume all credit card numbers are at most 16 digits. For numbers that
-have fewer digits, use zeroes to fill out the remaining digits. Thus, 123456789 becomes
-"0000 0001 2345 6789".
+    It's fine to use an Integer for a credit card number internally, but we (as consumers)
+    are accustomed to seeing the number with a certain formatting. In the following exercises, 
+    we want to translate between the integer value 4012888888881881 and the string and the string
+    "4012 8888 8888 1881", so that we have a space after every fourth digit from the
+    right. We'll assume all credit card numbers are at most 16 digits. For numbers that
+    have fewer digits, use zeroes to fill out the remaining digits. Thus, 123456789 becomes
+    "0000 0001 2345 6789".
 
 5. Define the function
 	```
@@ -118,7 +118,7 @@ have fewer digits, use zeroes to fill out the remaining digits. Thus, 123456789 
 
     Explain: How can your function fail?
 
-**Identifying Credit Card Type**
+    **Identifying Credit Card Type**
 
     Credit cards not only have a formula for validating the digits; they also have formulas
     for determining the type of card. The type is distinguished by issuer and length:
@@ -172,10 +172,11 @@ have fewer digits, use zeroes to fill out the remaining digits. Thus, 123456789 
    3) Look up the credit card issuer.
 
    4) Print the following:
+   
 	* The reformatted number as defined in Ex. 6.
 	* Status of validation.
     * Name of issuer or error message.
-
+    
    5) Go back to the first step.
 
 	You can end the program by typing Crtl-C.
@@ -208,7 +209,7 @@ have fewer digits, use zeroes to fill out the remaining digits. Thus, 123456789 
 
     The function toDigitsRevG is more general than toDigitsRev , because it supports other
     types of integers such as Int . What makes the definition of this function different from
-    toDigitsRev ? Describe this in your comments.
+    *toDigitsRev* ? Describe this in your comments.
 
     In general, we want Haskell functions to be total. That is, the function should not
     produce any errors or incorrect values. How do you make toDigitsRevG a total function?
