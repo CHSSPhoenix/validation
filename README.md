@@ -1,7 +1,7 @@
 # Validation
 **Sean Leather, adapted by Andres Löh**
 
-Use the file Practicum1.hs linked from the wiki. All of the functions are "undefined" to start with,
+Use the file Validation.hs from src folder. All of the functions are "undefined" to start with,
  allowing you to load the file into GHCi even though you haven't completed all the exercises.
 
 **Validating Credit Card Numbers**
